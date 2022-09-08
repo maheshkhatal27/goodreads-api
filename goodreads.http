@@ -1,0 +1,45 @@
+GET http://localhost:3000/books/
+
+### 
+
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Order of the Phoenix",
+    "authorId":1,
+    "rating":5.62,
+    "ratingCount":126559,
+    "reviewCount":900,
+    "desciption":"There is a door at the end of a silent corridor",
+    "pages":600,
+    "date_of_publication":"Aug 1st 2004",
+    "edition_language":"English",
+    "price":1700,
+    "online_stores":"Amazon, Audible,Google play, Indigo,Abebooks"
+}
+
+###
+
+PUT http://localhost:3000/books/41/
+Content-Type: application/json
+
+{
+    "title": "Harry Potter and the Order of the Phoenix",
+    "authorId":1,
+    "rating":5.62,
+    "ratingCount":200000,
+    "reviewCount":200,
+    "desciption":"There is a door at the end of a silent corridor",
+    "pages":800,
+    "date_of_publication":"Aug 1st 2004",
+    "edition_language":"English",
+    "price":1700,
+    "online_stores":"Amazon, Audible,Google play, Indigo,Abebooks"
+}
+
+###
+DELETE http://localhost:3000/books/42/
+
+###
+GET http://localhost:3000/authors/1/books/
